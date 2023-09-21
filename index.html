@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" style="position: absolute;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wallpapers</title>
+    <link rel="icon" href="losing-control.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Press+Start+2P&family=Roboto:wght@900&display=swap');
+
+        .main-title{
+            display: flex;
+            justify-content: center;
+            font-size: 4rem;
+            text-align: center;
+            margin: 7rem o 6rem 0;
+            font-family: 'Roboto', sans-serif;
+
+        }
+        .botones{
+            display: flex;
+            padding: 10px 10px 100px 0px;
+            gap: 50px;
+            font-family: 'Roboto', sans-serif;
+        }
+        .botones > a{
+            text-decoration: none;
+            color: black;
+            font-size: 1.5rem;
+            font-family: 'Roboto', sans-serif;
+            padding: 20px;
+            border: 5px solid black;
+            transition: transform 0.4s ease;
+        }
+        .botones > a:hover {
+            background-color: black;
+            color: white;
+            transform: scale(1.1);
+        }
+        .desktop-title{
+            font-size: 3rem;
+            margin: 4rem 0 4rem 0;
+            font-family: 'Roboto', sans-serif;
+
+        }
+
+        .mobile-wallpapers-container{
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 0 2.5%;
+            margin: 1rem 0;
+        }
+        .desktop-wallpapers-container{
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 0 2.5%;
+            margin: 1rem 0;
+        }
+        .wallpaper-container{
+            margin: 0 0 2rem 0;
+            transition: transform 0.3s ease;
+        }
+        .wallpaper-container:hover{
+            transform: scale(1.1); 
+        }
+        .wallpaper{
+            display: flex;
+            justify-content: center;
+            transition: all .2 ease;
+        }
+        .full-midle-page{
+            padding: 0px 100px 0px 100px!important;
+        }
+        .full-midle-page img{
+            max-width: 100%;
+        }
+        .wallpaper span{
+            position: absolute;
+            align-self: center;
+            text-align: center;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 3rem;
+        }
+
+        footer{
+            margin-top: 80px;
+            height: 100px;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+
+        } 
+
+        @media (min-width: 319px) and (max-width: 1200px){
+            
+            .full-midle-page{
+                padding: 26px !important;
+            }
+            .mobile-wallpapers-container, .desktop-wallpapers-container{
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+            }
+            .main-title > h2{
+                font-size: 2rem;
+                font-family: 'Roboto', sans-serif;
+
+            }
+            .mobile-title, .desktop-title{
+                font-size: 2rem;
+            }
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="main-title">
+        <h2> NowPad Wallpapers ®</h2>
+    </div>
+    <div class="full-page">
+        <div class="full-midle-page">
+
+            <div class="botones">
+                <a href="#mobile-wallpapers-section"> Móviles </a>
+                <a href="#desktop-wallpapers-section"> Computadoras</a>
+            </div>
+
+            <div id="mobile-wallpapers-section" class="desktop-title"><h2>Mobile Wallpapers</h2></div>
+
+            <div id="mobile-wallpapers-section" class="mobile-wallpapers-container">
+                
+                <!-- Mobiles Imagenes -->
+                <div class="wallpaper-container">
+                    <a class="wallpaper" href="heat-and-flowers-10.png">
+                        <img src="heat-and-flowers-10.png" alt="">
+                        <span>
+                            Descargar
+                        </span>
+                    </a>
+                </div>
+
+                <div class="wallpaper-container">
+                    <a class="wallpaper" href="destino-poster-chica7.png">
+                        <img src="destino-poster-chica7.png" alt="">
+                        <span>
+                            Descargar
+                        </span>
+                    </a>
+                </div>
+
+                <div class="wallpaper-container">
+                    <a class="wallpaper" href="destino-version-alterna-7.png">
+                        <img src="destino-version-alterna-7.png" alt="">
+                        <span>
+                            Descargar
+                        </span>
+                    </a>
+                </div>
+
+                <div class="wallpaper-container">
+                    <a class="wallpaper" href="mava-version-iluminacion-normal-3.png">
+                        <img src="mava-version-iluminacion-normal-3.png" alt="">
+                        <span>
+                            Descargar
+                        </span>
+                    </a>
+                </div>
+
+                <div class="wallpaper-container">
+                    <a class="wallpaper" href="red-bull-design.jpg">
+                        <img src="red-bull-design.jpg" alt="">
+                        <span>
+                            Descargar
+                        </span>
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div id="desktop-wallpapers-section" class="desktop-title"><h2>Desktop Wallpapers</h2></div>
+
+            <div class="desktop-wallpapers-container">
+                <!-- Desktop Imagenes -->
+                <div class="wallpaper-container">
+                    <a class="wallpaper" href="casa-bajo-el-agua.png">
+                        <img src="casa-bajo-el-agua.png" alt="">
+                        <span>
+                            Descargar
+                        </span>
+                    </a>
+                </div>
+
+                <div class="wallpaper-container">
+                    <a class="wallpaper" href="YOU.png">
+                        <img src="YOU.png" alt="">
+                        <span>
+                            Descargar
+                        </span>
+                    </a>
+                </div>
+
+                <div class="wallpaper-container">
+                    <a class="wallpaper" href="moto.png">
+                        <img src="moto.png" alt="">
+                        <span>
+                            Descargar
+                        </span>
+                    </a>
+                </div>
+
+                <div class="wallpaper-container">
+                    <a class="wallpaper" href="cubo.jpg">
+                        <img src="cubo.jpg" alt="">
+                        <span>
+                            Decargar
+                        </span>
+                    </a>
+                </div>
+
+                <div class="wallpaper-container">
+                    <a class="wallpaper" href="mujer.png">
+                        <img src="mujer.png" alt="">
+                        <span>
+                            Descargar
+                        </span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    
+    <script>
+
+    </script>
+
+    <footer>
+        <p> NowPad Company ® </p>
+    </footer>
+
+    <script>
+        
+
+    </script>
+
+</body>
+</html>
